@@ -292,10 +292,7 @@
           <span class="logo-text">seen</span>
         </div>
         <p class="footer-desc">{{ t.footerDesc }}</p>
-        <p class="footer-copy">
-          {{ t.footerCopy }}
-          <a href="https://github.com/zzlorz/seen" target="_blank">{{ t.footerGitHub }}</a>
-        </p>
+        <p class="footer-copy">{{ t.footerCopy }}</p>
       </div>
     </footer>
   </div>
@@ -305,7 +302,7 @@
 import { ref, computed } from 'vue';
 
 const cmdCopied = ref(false);
-const lang = ref('zh');
+const lang = ref('en');
 
 const t = computed(() => translations[lang.value]);
 
